@@ -1,0 +1,25 @@
+---
+
+- name: copy fichiers jmx
+  copy: src=csrf_token_csv_data.jmx dest=/home/stagiaire/docker-jmeter/csrf_token_csv_data.jmx
+
+#- name: copy fichiers jmx
+# copy: src=csrf_token_regex.jmx dest=/home/stagiaire/docker-jmeter/csrf_token_regex.jmx
+
+- name: copy fichiers jmx
+  copy: src=csrf_token_reponse_assertion.jmx dest=/home/stagiaire/docker-jmeter/csrf_token_reponse_assertion.jmx
+
+- name: copy fichiers jmx
+  copy: src=csrf_token_user_defined_variable.jmx dest=/home/stagiaire/docker-jmeter/csrf_token_user_defined_variable.jmx
+
+- name: copy fichiers jmx
+  copy: src=csrf_token_origin.jmx dest=/home/stagiaire/docker-jmeter/csrf_token_origin.jmx
+
+- name: copy fichiers jmx
+  copy: src=csrf_token_user_defined_variable_graphique.jmx dest=/home/stagiaire/docker-jmeter/csrf_token_user_defined_variable_graphique.jmx
+
+- name: copy fichiers csv
+  copy: src=data.csv dest=/home/stagiaire/docker-jmeter/data.csv
+
+#- name: copy essai
+#  copy: src=essai.sh dest=/home/stagiaire/docker-jmeter/essai.sh

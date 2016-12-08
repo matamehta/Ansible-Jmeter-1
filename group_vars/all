@@ -1,0 +1,3 @@
+server_dest_path: /home/stagiaire/
+nginx_port: 5000
+server_hostname: jmeter.example.com

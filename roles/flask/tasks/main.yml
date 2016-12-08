@@ -1,0 +1,9 @@
+---
+# Install Python flask packages
+- pip: name={{ item }} state=present executable=pip3
+  with_items:
+    - flask
+    - flask_script
+    - flask_bootstrap
+    - flask_moment
+    - flask_wtf

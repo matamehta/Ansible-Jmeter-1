@@ -1,0 +1,14 @@
+---
+
+- name: copy static
+  copy: src=static dest={{ server_dest_path }}
+
+- name: copy templates
+  copy: src=templates dest={{ server_dest_path }}
+
+- name: copy a main python file
+  copy: src=hello.py dest={{ server_dest_path }}
+
+- name: Run Jmeter
+  shell: /home/stagiaire/apache-jmeter-3.1/bin/jmeter -JHOST=192.168.124.32 -JPORT=5000 -JNBR_USER=50 -n -t /home/stagiaire/docker-jmeter/csrf_token_user_defined_variable.jmx -l /home/stagiaire/docker-jmeter/results/tests_results.jtl
+#  -Jjmeter.save.saveservice.output_format=xml -Jjmeter.save.saveservice.assertion_results=all -Jjmeter.save.saveservice.response_data=true -Jjmeter.save.saveservice.autoflush=true

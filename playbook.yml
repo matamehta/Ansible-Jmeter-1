@@ -1,0 +1,12 @@
+---
+# This playbook will install Jmeter
+- name:  Jmeter, Jmeter files
+  hosts: centos-server
+  remote_user: root
+  # remote_user: user
+  # sudo: yes
+
+  roles:
+    - Jmeter
+    - runtest
+    - Fichiers jmeter

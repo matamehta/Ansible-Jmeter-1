@@ -1,0 +1,2880 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="186" it="0" lt="186" ts="1479996803252" s="true" lb="landing page /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3340" ng="1" na="1">
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : Pas de Calcul&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480000403##63fb9d4732b3b079e9c03fdf4bada76b94bb4a80&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<sample t="186" it="60" lt="186" ts="1479996803204" s="true" lb="transaction controller 1 /" rc="200" rm="Number of samples in transaction : 1, number of failing samples : 0" tn="Thread Group 1-1" dt="" by="3340" ng="1" na="1">
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="17" it="0" lt="11" ts="1479996803452" s="true" lb="Post calculation /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3755" ng="1" na="1">
+  <httpSample t="11" it="0" lt="11" ts="1479996803452" s="true" lb="http://localhost:5000/" rc="302" rm="FOUND" tn="Thread Group 1-1" dt="text" by="575" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&quot;/&quot;&gt;/&lt;/a&gt;.  If not click the link.</responseData>
+  </httpSample>
+  <httpSample t="4" it="0" lt="4" ts="1479996803465" s="true" lb="http://localhost:5000/" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3180" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.43&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480000403##63fb9d4732b3b079e9c03fdf4bada76b94bb4a80&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  </httpSample>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.43&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480000403##63fb9d4732b3b079e9c03fdf4bada76b94bb4a80&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<httpSample t="9" it="0" lt="4" ts="1479996803472" s="true" lb="Post calculation /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3755" ng="1" na="1">
+  <httpSample t="4" it="0" lt="4" ts="1479996803472" s="true" lb="http://localhost:5000/" rc="302" rm="FOUND" tn="Thread Group 1-1" dt="text" by="575" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&quot;/&quot;&gt;/&lt;/a&gt;.  If not click the link.</responseData>
+  </httpSample>
+  <httpSample t="4" it="0" lt="4" ts="1479996803477" s="true" lb="http://localhost:5000/" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3180" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.72&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480000403##63fb9d4732b3b079e9c03fdf4bada76b94bb4a80&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  </httpSample>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.72&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480000403##63fb9d4732b3b079e9c03fdf4bada76b94bb4a80&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<httpSample t="9" it="0" lt="4" ts="1479996803484" s="true" lb="Post calculation /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3755" ng="1" na="1">
+  <httpSample t="4" it="0" lt="4" ts="1479996803484" s="true" lb="http://localhost:5000/" rc="302" rm="FOUND" tn="Thread Group 1-1" dt="text" by="575" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&quot;/&quot;&gt;/&lt;/a&gt;.  If not click the link.</responseData>
+  </httpSample>
+  <httpSample t="4" it="0" lt="4" ts="1479996803489" s="true" lb="http://localhost:5000/" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3180" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.23&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480000403##63fb9d4732b3b079e9c03fdf4bada76b94bb4a80&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  </httpSample>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.23&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480000403##63fb9d4732b3b079e9c03fdf4bada76b94bb4a80&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<httpSample t="9" it="0" lt="3" ts="1479996803495" s="true" lb="Post calculation /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3755" ng="1" na="1">
+  <httpSample t="4" it="0" lt="3" ts="1479996803495" s="true" lb="http://localhost:5000/" rc="302" rm="FOUND" tn="Thread Group 1-1" dt="text" by="575" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&quot;/&quot;&gt;/&lt;/a&gt;.  If not click the link.</responseData>
+  </httpSample>
+  <httpSample t="4" it="0" lt="4" ts="1479996803500" s="true" lb="http://localhost:5000/" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3180" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 1.57&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480000403##63fb9d4732b3b079e9c03fdf4bada76b94bb4a80&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  </httpSample>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 1.57&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480000403##63fb9d4732b3b079e9c03fdf4bada76b94bb4a80&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<httpSample t="8" it="0" lt="8" ts="1479996803506" s="false" lb="Post calculation /" rc="500" rm="INTERNAL SERVER ERROR" tn="Thread Group 1-1" dt="text" by="2389" ng="1" na="1">
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Flasky - Internal Server Error&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;Internal Server Error&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<httpSample t="8" it="0" lt="4" ts="1479996803516" s="true" lb="Post calculation /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3755" ng="1" na="1">
+  <httpSample t="4" it="0" lt="4" ts="1479996803516" s="true" lb="http://localhost:5000/" rc="302" rm="FOUND" tn="Thread Group 1-1" dt="text" by="575" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&quot;/&quot;&gt;/&lt;/a&gt;.  If not click the link.</responseData>
+  </httpSample>
+  <httpSample t="3" it="0" lt="3" ts="1479996803521" s="true" lb="http://localhost:5000/" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3180" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 5.02&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480000403##63fb9d4732b3b079e9c03fdf4bada76b94bb4a80&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  </httpSample>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 5.02&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480000403##63fb9d4732b3b079e9c03fdf4bada76b94bb4a80&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+<httpSample t="8" it="0" lt="4" ts="1479996803526" s="true" lb="Post calculation /" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3755" ng="1" na="1">
+  <httpSample t="4" it="0" lt="4" ts="1479996803526" s="true" lb="http://localhost:5000/" rc="302" rm="FOUND" tn="Thread Group 1-1" dt="text" by="575" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 3.2 Final//EN&quot;&gt;
+&lt;title&gt;Redirecting...&lt;/title&gt;
+&lt;h1&gt;Redirecting...&lt;/h1&gt;
+&lt;p&gt;You should be redirected automatically to target URL: &lt;a href=&quot;/&quot;&gt;/&lt;/a&gt;.  If not click the link.</responseData>
+  </httpSample>
+  <httpSample t="3" it="0" lt="3" ts="1479996803531" s="true" lb="http://localhost:5000/" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3180" ng="1" na="1">
+    <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.57&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480000403##63fb9d4732b3b079e9c03fdf4bada76b94bb4a80&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+  </httpSample>
+  <responseData class="java.lang.String">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+
+    &lt;title&gt;Web Server Devops Formation&lt;/title&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;!-- Bootstrap --&gt;
+    &lt;link href=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot;&gt;
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;/static/favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+  &lt;/head&gt;
+  &lt;body&gt;
+    
+&lt;div class=&quot;navbar navbar-inverse&quot; role=&quot;navigation&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;div class=&quot;navbar-header&quot;&gt;
+            &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;.navbar-collapse&quot;&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Toggle navigation&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;
+            &lt;/button&gt;
+            &lt;a class=&quot;navbar-brand&quot; href=&quot;/&quot;&gt;Web Server&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;navbar-collapse collapse&quot;&gt;
+            &lt;ul class=&quot;nav navbar-nav&quot;&gt;
+                &lt;li&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+    
+&lt;div class=&quot;container&quot;&gt;
+    
+&lt;div class=&quot;page-header&quot;&gt;
+    &lt;h1&gt;La division de valeur 1 et valeur 2 est de : 0.57&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;form action=&quot;&quot; method=&quot;post&quot;
+  class=&quot;form&quot; role=&quot;form&quot;&gt;
+  &lt;input id=&quot;csrf_token&quot; name=&quot;csrf_token&quot; type=&quot;hidden&quot; value=&quot;1480000403##63fb9d4732b3b079e9c03fdf4bada76b94bb4a80&quot;&gt;
+  
+    
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur1&quot;&gt;valeur 1 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur1&quot; name=&quot;valeur1&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+
+&lt;div class=&quot;form-group  required&quot;&gt;&lt;label class=&quot;control-label&quot; for=&quot;valeur2&quot;&gt;valeur 2 : &lt;/label&gt;
+        
+          &lt;input class=&quot;form-control&quot; id=&quot;valeur2&quot; name=&quot;valeur2&quot; required type=&quot;text&quot; value=&quot;&quot;&gt;
+        
+  &lt;/div&gt;
+
+
+    
+
+
+
+
+
+  
+
+  
+  
+
+
+    &lt;input class=&quot;btn btn-default&quot; id=&quot;submit&quot; name=&quot;submit&quot; type=&quot;submit&quot; value=&quot;Calculer&quot;&gt;
+  
+
+
+
+
+
+&lt;/form&gt;
+
+&lt;/div&gt;
+
+
+    
+
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;//cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.3/moment-with-locales.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+moment.locale(&quot;en&quot;);
+function flask_moment_render(elem) {
+    $(elem).text(eval(&apos;moment(&quot;&apos; + $(elem).data(&apos;timestamp&apos;) + &apos;&quot;).&apos; + $(elem).data(&apos;format&apos;) + &apos;;&apos;));
+    $(elem).removeClass(&apos;flask-moment&apos;).show();
+}
+function flask_moment_render_all() {
+    $(&apos;.flask-moment&apos;).each(function() {
+        flask_moment_render(this);
+        if ($(this).data(&apos;refresh&apos;)) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data(&apos;refresh&apos;));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+&lt;/script&gt;
+
+  &lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+</httpSample>
+
+<httpSample t="35" it="0" lt="0" ct="35" ts="1480342201956" s="false" lb="landing page /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<sample t="35" it="56" lt="0" ct="35" ts="1480342201911" s="false" lb="transaction controller 1 /" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="Thread Group 1-1" dt="" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="4" it="0" lt="0" ct="4" ts="1480342202004" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="1" ts="1480342202010" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="1" ts="1480342202012" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="1" ts="1480342202014" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="1" ts="1480342202016" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="1" ts="1480342202018" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="1" ts="1480342202020" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+
+<httpSample t="69" it="0" lt="0" ct="69" ts="1480346093516" s="false" lb="landing page /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<sample t="69" it="108" lt="0" ct="69" ts="1480346093428" s="false" lb="transaction controller 1 /" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="Thread Group 1-1" dt="" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="32" it="0" lt="0" ct="32" ts="1480346093606" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="1" ts="1480346093640" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="1" ts="1480346093644" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="1" ts="1480346093647" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="1" ts="1480346093650" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="1" ts="1480346093652" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="1" ts="1480346093655" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+
+<httpSample t="35" it="0" lt="0" ct="35" ts="1480346164673" s="false" lb="landing page /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<sample t="35" it="57" lt="0" ct="35" ts="1480346164627" s="false" lb="transaction controller 1 /" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="Thread Group 1-1" dt="" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="4" it="0" lt="0" ct="4" ts="1480346164720" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="1" ts="1480346164725" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1480346164728" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1480346164730" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="0" ts="1480346164732" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1480346164734" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="1" ts="1480346164735" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+
+<httpSample t="38" it="0" lt="0" ct="38" ts="1480410057519" s="false" lb="landing page /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<sample t="38" it="54" lt="0" ct="38" ts="1480410057475" s="false" lb="transaction controller 1 /" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="Thread Group 1-1" dt="" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="4" it="0" lt="0" ct="4" ts="1480410057568" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1480410057574" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="1" ts="1480410057576" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="1" ts="1480410057578" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="1" ts="1480410057580" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="1" ts="1480410057582" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="1" ts="1480410057584" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.ConnectException" rm="Non HTTP response message: Connection refused (Connection refused)" tn="Thread Group 1-1" dt="text" by="2130" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+
+<httpSample t="324" it="0" lt="0" ct="323" ts="1480411097055" s="false" lb="landing page /" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: web: No address associated with hostname" tn="Thread Group 1-1" dt="text" by="2234" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.UnknownHostException: web: No address associated with hostname
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:928)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1323)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1276)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<sample t="324" it="61" lt="0" ct="323" ts="1480411097010" s="false" lb="transaction controller 1 /" rc="" rm="Number of samples in transaction : 1, number of failing samples : 1" tn="Thread Group 1-1" dt="" by="2234" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<httpSample t="5" it="0" lt="0" ct="5" ts="1480411097397" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: web" tn="Thread Group 1-1" dt="text" by="1991" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.UnknownHostException: web
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="0" ts="1480411097404" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: web" tn="Thread Group 1-1" dt="text" by="1991" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.UnknownHostException: web
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="1" ts="1480411097406" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: web" tn="Thread Group 1-1" dt="text" by="1991" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.UnknownHostException: web
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="1" ts="1480411097408" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: web" tn="Thread Group 1-1" dt="text" by="1991" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.UnknownHostException: web
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="1" it="0" lt="0" ct="1" ts="1480411097410" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: web" tn="Thread Group 1-1" dt="text" by="1991" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.UnknownHostException: web
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1480411097412" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: web" tn="Thread Group 1-1" dt="text" by="1991" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.UnknownHostException: web
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+<httpSample t="0" it="0" lt="0" ct="0" ts="1480411097414" s="false" lb="Post calculation /" rc="Non HTTP response code: java.net.UnknownHostException" rm="Non HTTP response message: web" tn="Thread Group 1-1" dt="text" by="1991" sby="0" ng="1" na="1">
+  <responseData class="java.lang.String">java.net.UnknownHostException: web
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1280)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1192)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1126)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:262)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:161)
+	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
+	at org.apache.jmeter.protocol.http.sampler.MeasuringConnectionManager$MeasuredConnection.open(MeasuringConnectionManager.java:114)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.executeRequest(HTTPHC4Impl.java:654)
+	at org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl.sample(HTTPHC4Impl.java:413)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy.sample(HTTPSamplerProxy.java:74)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1166)
+	at org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase.sample(HTTPSamplerBase.java:1155)
+	at org.apache.jmeter.threads.JMeterThread.executeSamplePackage(JMeterThread.java:475)
+	at org.apache.jmeter.threads.JMeterThread.processSampler(JMeterThread.java:418)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:249)
+	at java.lang.Thread.run(Thread.java:745)
+</responseData>
+</httpSample>
+
+</testResults>

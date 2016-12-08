@@ -1,0 +1,44 @@
+---
+
+- name: lancement des mises a jour
+  yum: name=* state=latest
+
+- name: Install packages
+  yum: name={{ item }} state=installed
+  with_items:
+   - wget
+   - java-1.8.0-openjdk.x86_64
+   - tar
+
+- name: Get jmeter3.1
+  shell: "wget http://apache.mediamirrors.org//jmeter/binaries/apache-jmeter-3.1.tgz"
+
+- name: Dézipper jmeter
+  shell: "tar -xzvf apache-jmeter-3.1.tgz"
+
+#- name: Executer Jmeter
+#  shell: "jmeter.sh"
+#  args: chdir=/home/stagiaire/apache-jmeter-3.1/bin/
+
+- name: Crée directory docker-jmeter
+  file: path=/home/stagiaire/docker-jmeter/ state=directory
+
+- name: Crée directory results
+  file: path=/home/stagiaire/docker-jmeter/results state=directory
+
+- name: install epel-release
+  yum: name=epel-release state=present
+
+- name: Install packages
+  yum: name={{ item }} state=latest
+  with_items:
+
+     - libselinux-python
+     - python34-setuptools
+     - python34
+     - git
+
+- name: reload ansible facts
+  setup:
+
+
